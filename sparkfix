@@ -13,3 +13,10 @@ conf = ( SparkConf()
         ) 
 
 sc = SparkContext(conf=conf)
+
+
+from pyspark.sql import SQLContext
+
+sc = SparkContex.getOrCreate()
+
+sqlContext = SQLContext(sc)
