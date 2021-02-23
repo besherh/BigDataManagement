@@ -1,0 +1,15 @@
+from pyspark import  SparkContext 
+
+from pyspark import SparkConf 
+
+#spark conf 
+
+conf = ( SparkConf() 
+
+        .setMaster("local[*]") 
+
+        .setAppName('pyspark') 
+
+        ) 
+
+sc = SparkContext(conf=conf)
